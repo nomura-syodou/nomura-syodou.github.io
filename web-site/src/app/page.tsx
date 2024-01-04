@@ -7,88 +7,45 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src={`${BASE_PATH}/vercel.svg`}
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <p>野村書道教室</p>
       </div>
 
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src={`${BASE_PATH}/next.svg`}
+          src={`${BASE_PATH}/top_sample.svg`}
           alt="Next.js Logo"
-          width={180}
-          height={37}
+          width={512}
+          height={180}
           priority
         />
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <div className={styles.card}>
+          <h2>講師紹介</h2>
+          <p>指導する講師について紹介します。</p>
+        </div>
+
+        <div className={styles.card}>
+          <h2>選ばれる理由</h2>
+          <p>当教室が選ばれる理由があります。</p>
+        </div>
+
+        <div className={styles.card}>
+          <h2>教室案内</h2>
+          <p>開講日や所在についての案内です。</p>
+        </div>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://www.instagram.com/nomura_syodou/?hl=ja"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+          <h2>公式Instagram</h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            講師や受講生の作品を公開しています。（外部サイトが別タブで開きます）
           </p>
         </a>
       </div>
