@@ -1,8 +1,8 @@
 // lecture.tsx
 import HeadComponent from "..//components/Head";
 import AppbarComponent from "../components/AppbarComponent";
-import Footer from "../components/FooterComponent";
 import FloatingButtonToHome from "../components/FloatingButtonToHome";
+import Footer from "../components/FooterComponent";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../src/theme";
 
@@ -28,7 +28,7 @@ const tabStyles = {
   color: "#FFFFFF",
 };
 
-const Lecture: React.FC = () => {
+const Nishikita: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box className={`${mincho.className}`}>
@@ -38,25 +38,20 @@ const Lecture: React.FC = () => {
 
         <Box sx={{ width: "100%" }}>
           <Tabs
-            value="one"
+            value="two"
             textColor="secondary"
             indicatorColor="secondary"
             aria-label="school list"
             centered
           >
             <Link href="/lecture" passHref>
-              <Tab
-                value="one"
-                label="伊丹野間教室"
-                href="/lecture"
-                sx={tabStyles}
-              />
+              <Tab value="one" label="伊丹野間教室" href="/lecture" />
             </Link>
             <Link href="/tsukaguchi" passHref>
               <Tab value="two" label="東塚口教室" />
             </Link>
             <Link href="/nishikita" passHref>
-              <Tab value="three" label="西宮北口教室" />
+              <Tab value="three" label="西宮北口教室" sx={tabStyles} />
             </Link>
           </Tabs>
         </Box>
@@ -69,24 +64,24 @@ const Lecture: React.FC = () => {
           >
             <Grid item xs={2} sm={4} md={4}>
               <Box sx={{ p: 2 }}>
-                <h2>伊丹野間教室</h2>
+                <h2>西宮北口教室</h2>
                 <table>
                   <tbody>
                     <tr>
                       <td>住所</td>
-                      <td>伊丹市野間1丁目3-11</td>
+                      <td>西宮市甲風園1丁目7-8</td>
                     </tr>
                     <tr>
                       <td>電話番号</td>
                       <td>090-5647-6747</td>
                     </tr>
                     <tr>
-                      <td>開講日時</td>
-                      <td>
-                        水曜 14:00〜20:00
-                        <br />
-                        土曜 10:00〜12:00、14:00〜20:00
-                      </td>
+                      <td>開講日</td>
+                      <td>第２・第４金曜</td>
+                    </tr>
+                    <tr>
+                      <td>時間</td>
+                      <td>10:00〜12:00</td>
                     </tr>
                   </tbody>
                 </table>
@@ -101,8 +96,8 @@ const Lecture: React.FC = () => {
                 }}
               >
                 <img
-                  src="school_noma_outside.png"
-                  alt="伊丹野間教室外観"
+                  src="school_nishikita_outside.png"
+                  alt="東塚口教室内観"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -116,7 +111,7 @@ const Lecture: React.FC = () => {
             <Grid item xs={8} sm={8}>
               <Item>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d819.3866329791543!2d135.39631154211244!3d34.76701424904906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f1bcf24d6c7f%3A0xe9f47ef2e4bb5e21!2z6YeO5p2R5pu46YGT5pWZ5a6k!5e0!3m2!1sja!2sjp!4v1705235992725!5m2!1sja!2sjp"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13113.286586965773!2d135.34569571553658!3d34.74748956825031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f2389c72db37%3A0xf57a2ab6934283ba!2z55Sy6aKo55S76IuR!5e0!3m2!1sja!2sjp!4v1706416510520!5m2!1sja!2sjp"
                   width="100%"
                   height="450"
                   loading="lazy"
@@ -133,4 +128,4 @@ const Lecture: React.FC = () => {
   );
 };
 
-export default Lecture;
+export default Nishikita;

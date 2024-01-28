@@ -29,12 +29,19 @@ const GridComponent = () => {
     {
       id: 3,
       imageUrl: "reason.jpg", // 画像のURLを実際のものに置き換える
-      title: "教室案内",
-      description: "開校日や所在についての案内です",
-      link: "/lecture", // リンク先のURLを実際のものに置き換える
+      title: "受講案内",
+      description: "受講の流れについて案内します",
+      link: "/guidance", // リンク先のURLを実際のものに置き換える
     },
     {
       id: 4,
+      imageUrl: "school_noma_inside.png", // 画像のURLを実際のものに置き換える
+      title: "教室紹介",
+      description: "開校日や所在についての紹介です",
+      link: "/lecture", // リンク先のURLを実際のものに置き換える
+    },
+    {
+      id: 5,
       imageUrl: "dragon.JPG", // 画像のURLを実際のものに置き換える
       title: "公式インスタグラム",
       description: "講師や受講生の作品を公開しています",
@@ -52,7 +59,7 @@ const GridComponent = () => {
                 <Card>
                   <img
                     src={card.imageUrl}
-                    alt={`Card ${card.id}`}
+                    alt={card.title}
                     style={{
                       width: "100%",
                       height: "200px",
