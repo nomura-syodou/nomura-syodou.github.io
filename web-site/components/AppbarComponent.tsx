@@ -13,6 +13,7 @@ const AppbarComponent = () => {
           alignItems: "center",
           justifyContent: "center", // 左右中央に配置
           height: "60px", // 適切な高さを指定
+          background: `linear-gradient(to right, #021933, ${theme.palette.primary.main}, ${theme.palette.secondary.main},#021933)`,
         }}
       >
         <Typography

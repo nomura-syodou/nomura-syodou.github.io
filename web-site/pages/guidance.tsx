@@ -76,7 +76,7 @@ const Guidance: React.FC = () => {
                         <TableCell
                           sx={{
                             border: "1px solid",
-                            borderColor: "#8a9fe6",
+                            borderColor: theme.palette.secondary.main,
                             color: theme.palette.primary.contrastText,
                           }}
                         >
@@ -85,7 +85,7 @@ const Guidance: React.FC = () => {
                         <TableCell
                           sx={{
                             border: "1px solid",
-                            borderColor: "#8a9fe6",
+                            borderColor: theme.palette.secondary.main,
                             color: theme.palette.primary.contrastText,
                           }}
                         >
@@ -94,7 +94,7 @@ const Guidance: React.FC = () => {
                         <TableCell
                           sx={{
                             border: "1px solid",
-                            borderColor: "#8a9fe6",
+                            borderColor: theme.palette.secondary.main,
                             color: theme.palette.primary.contrastText,
                           }}
                         >
@@ -107,7 +107,7 @@ const Guidance: React.FC = () => {
                         <TableCell
                           sx={{
                             border: "1px solid",
-                            borderColor: "#8a9fe6",
+                            borderColor: theme.palette.secondary.main,
                           }}
                         >
                           4,500円
@@ -115,7 +115,7 @@ const Guidance: React.FC = () => {
                         <TableCell
                           sx={{
                             border: "1px solid",
-                            borderColor: "#8a9fe6",
+                            borderColor: theme.palette.secondary.main,
                           }}
                         >
                           5,100円
@@ -123,7 +123,7 @@ const Guidance: React.FC = () => {
                         <TableCell
                           sx={{
                             border: "1px solid",
-                            borderColor: "#8a9fe6",
+                            borderColor: theme.palette.secondary.main,
                           }}
                         >
                           6,100円
